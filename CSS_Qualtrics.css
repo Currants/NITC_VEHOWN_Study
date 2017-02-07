@@ -179,6 +179,7 @@ color: white;
 .Skin .RO .DND ul.Edited .rank, .Skin .RO .DND ul.NotEdited li:hover .rank {
 background: #00457c;
 color: white;
+opacity: 0.0;
 }
 
 .Skin #Plug {

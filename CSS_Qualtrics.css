@@ -1,0 +1,190 @@
+/* Stylesheet for Qualtrics Forms */
+
+select {
+min-width: 200px;
+}
+
+.Skin .MC .MAVR input.TextEntryBox, .Skin .MC .SAVR input.TextEntryBox {
+left:0px;
+margin: 0px;
+}
+
+.Skin .horizontalbar tr.Stars td.value input, .Skin .horizontalbar table.sliderGrid tr td.value input {
+border: 1px solid lightgray;
+}
+/* The page background , outside the centered body of questions. (top, bottom, right, left).*/
+#SurveyEngineBody {
+	/*background: transparent url(examplebackground.gif) repeat-x fixed left top;*/
+	background-color: #00457c;
+}
+
+/*Header and Footer are directly above and directly below the body of questions. This can be used to change shadow images or background colors.*/
+.Skin #Header {
+  	background: transparent url(none) no-repeat scroll left bottom;
+  	margin:20px;
+  	color: #ffffff;
+	font-size:24px;
+}
+
+.Skin #Footer {
+  background: transparent url(none) no-repeat scroll left top;
+  color:#fff;
+} 
+
+/* The background of the entire question area (body of questions).*/
+.Skin #SkinContent {
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 40px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 0px 40px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 40px rgba(0,0,0,0.4);
+	/*background: transparent url(exampleimage.png) repeat fixed center top;*/
+}
+
+/*Relates to SkinContent above. Can customize the width, font, etc. */
+.SkinInner {
+	width: 650px;
+	/*font-family: arial,helvetica,sans-serif;*/
+	/*font-size: 10pt;*/
+}
+
+/*The logo bar background color. Sits behind #Logo area (below). Can have its own image behind the #Logo.*/
+.Skin #LogoBar {
+	background: transparent url(//www.wvu.edu/images/masthead-bg.jpg) no-repeat scroll left top;
+	height:64px;
+}
+
+/* Typically untouched. Special coding for IE. */
+* html .Skin #Logo {
+	filter: none;
+	background-image: none; /* remove the qualtrics logo for ie */
+}
+/* Use the following to add a custom logo. */
+html .Skin #Logo {
+	height: 60px; /* image height here */
+	background: transparent url(//www.wvu.edu/images/wvu-logo.png) no-repeat scroll 15px 15px;
+}
+
+/* The buttons background color at the bottom of the page. */
+.Skin #Buttons {
+	background-color: white;
+    text-align: right;
+}
+
+/* Progress bar color. Displays at bottom of page. */
+.Skin .ProgressBarFill {
+	background:#00457c;
+}
+
+.Skin .ProgressBarFillContainer {
+border:1px solid #00457c;
+}
+
+/* To format all question text above each question. */
+.Skin .QuestionText {
+	font-size: 130%;
+	font-weight: bold;
+    padding: 5px;
+}
+
+.Skin .QuestionBody {
+padding:0px 10px 0px 10px;
+}
+
+.Skin #Questions {
+padding:10px 10px;
+}
+
+.Skin {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* .ReadableAlt is the alternating row color on questions where it is needed for readability
+ * .LightBG is an accent color used on several question types.
+ */
+.Skin .ReadableAlt,
+.Skin .LightBG {
+	background:#fcfcfc;
+}
+
+/*Change hover color for Rank Order Drag and Drop questions.*/
+/*.Skin .RO .DND ul li:hover {
+	background: none repeat scroll 0 0 #EBE9D9;
+}*/
+
+
+/* Is the alternating row color on questions where it's not needed. */
+.Skin .alt {
+}
+
+/* Is the non alternating color. Usually doesn't need to be touched. */
+.Skin .reg {
+}
+
+/* Is a dark background color used an accent in several questions */
+.Skin .DarkBG {
+}
+
+/* can be used to set the border color for all the quesions */
+.Skin .BorderColor {
+}
+
+/* Example of "boxed look". Uncomment below */
+/*
+.Skin .BorderColor {
+	border-color: #B55d3f;
+}
+.Skin .QuestionText{
+	padding:10px;
+	border-width: 0 0 1px 0;
+	border-style: solid;
+	background: #FFFCF2;
+}
+
+.Skin .QuestionOuter .InnerInner {
+	border-width: 1px;
+	border-style: solid;
+}
+*/
+
+/* Styles that highlight what the above things do. Uncomment below */
+/*
+.Skin .alt {
+	background: lightgray;
+}
+
+.Skin .ReadableAlt {
+	background: gray;
+}
+
+.Skin .LightBG {
+	background: yellow;
+}
+
+.Skin .DarkBG {
+	color: white;
+	background: black;
+}
+
+.Skin .BorderColor {
+	border-color: red;
+}
+*/
+
+.Skin .RO .DND .rank {
+background-color: #666666;
+color: white;
+}
+
+/*This is the color that will appear in the boxes behind the numbers of the rank order options when they're moved */
+.Skin .RO .DND ul.Edited .rank, .Skin .RO .DND ul.NotEdited li:hover .rank {
+background: #00457c;
+color: white;
+}
+
+.Skin #Plug {
+color:#fff;
+}
+
+.Skin #Plug a {
+color:#fff;
+}
